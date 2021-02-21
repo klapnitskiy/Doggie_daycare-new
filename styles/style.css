@@ -26,6 +26,43 @@ textarea {
   padding: 75px 0 120px;
 }
 
+.page__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+}
+
+.page__inner--align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 923px) {
+  .page__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.page__inner-item {
+  -ms-flex-preferred-size: calc(calc(830px - 100%) * 999);
+      flex-basis: calc(calc(830px - 100%) * 999);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .page--hero {
   background: url(../img/hero-bg-blue.jpg);
   background-size: cover;
@@ -61,6 +98,11 @@ textarea {
   background: url(../img/appointment-bg.jpg) no-repeat center;
   background-size: cover;
   padding: 130px 0 210px;
+}
+
+.page--stats {
+  background-color: #29c3be;
+  padding: 71px 0 78px;
 }
 
 .page__title {
@@ -145,6 +187,7 @@ textarea {
   line-height: 24px;
   color: #fff;
   letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
 .page__subtitle--mark {
@@ -181,8 +224,8 @@ textarea {
   color: #5d62b5;
 }
 
-.page__subtitle--upper {
-  text-transform: uppercase;
+.page__subtitle--capitalize {
+  text-transform: capitalize;
 }
 
 .page__container {
@@ -239,6 +282,11 @@ textarea {
 .page__text-body--xs {
   font-size: 14px;
   line-height: 22px;
+}
+
+.page__text-body--primary {
+  color: #5d62b5;
+  font-weight: bold;
 }
 
 .page__text-body--upper {
@@ -320,6 +368,21 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 0;
+}
+
+.page-features__item--stats {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: unset;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 237px;
+          flex: 0 1 237px;
   padding: 0;
 }
 
@@ -489,20 +552,6 @@ textarea {
   width: 100%;
 }
 
-.appointment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .appointment__title {
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -540,15 +589,11 @@ textarea {
   margin-left: auto;
 }
 
-.stats {
-  background-color: #29c3be;
+.stats-items {
+  margin-top: 60px;
 }
 
-.stats__inner {
-  padding: 71px 0 78px;
-}
-
-.stats__item {
+.stats-items__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,30 +602,31 @@ textarea {
           align-items: center;
 }
 
-.stats__item::before {
+.stats-items__item::before {
   content: "";
   height: 76px;
   max-width: 76px;
   width: 100%;
+  margin-right: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.stats__item--item1::before {
+.stats-items__item--item1::before {
   background: url(../img/icons/stats/dog_duckling_24x.svg);
 }
 
-.stats__item--item2::before {
-  background: url(../img/icons/stats/dog_food_bowl_24x.svg);
-}
-
-.stats__item--item3::before {
+.stats-items__item--item2::before {
   background: url(../img/icons/stats/dog_house_24px.svg);
 }
 
-.stats__item--item4::before {
+.stats-items__item--item3::before {
   background: url(../img/icons/stats/dog_leash_24x.svg);
+}
+
+.stats-items__item--item4::before {
+  background: url(../img/icons/stats/dog_food_bowl_24x.svg);
 }
 
 .stats__text {

@@ -1,38 +1,37 @@
 .stats {
-    background-color: $secondary1;
+    &-items {
+        margin-top: 60px;
 
-    &__inner {
-        padding: 71px 0 78px;
-    }
+        &__item {
+            display: flex;
+            align-items: center;
 
-    &__item {
-        display: flex;
-        align-items: center;
+            &::before {
+                content: "";
+                height: 76px;
+                max-width: 76px;
+                width: 100%;
+                margin-right: 10px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
 
-        &::before {
-            content: "";
-            height: 76px;
-            max-width: 76px;
-            width: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+            &--item1::before {
+                background: url(../img/icons/stats/dog_duckling_24x.svg);
+            }
 
-        &--item1::before {
-            background: url(../img/icons/stats/dog_duckling_24x.svg);
-        }
+            &--item2::before {
+                background: url(../img/icons/stats/dog_house_24px.svg);
+            }
 
-        &--item2::before {
-            background: url(../img/icons/stats/dog_food_bowl_24x.svg);
-        }
+            &--item3::before {
+                background: url(../img/icons/stats/dog_leash_24x.svg);
+            }
 
-        &--item3::before {
-            background: url(../img/icons/stats/dog_house_24px.svg);
-        }
-
-        &--item4::before {
-            background: url(../img/icons/stats/dog_leash_24x.svg);
+            &--item4::before {
+                background: url(../img/icons/stats/dog_food_bowl_24x.svg);
+            }
         }
     }
 
