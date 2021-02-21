@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$font-main: "Roboto", sans-serif;
+
+//colors
+$cta-action: linear-gradient(
+    88.51deg,
+    #dc4946 0.29%,
+    #f2726f 49.91%,
+    #ffc533 100%
+);
+$primary: #5d62b5;
+$secondary1: #29c3be;
+$secondary2: #f2726f;
+$secondary3: #ffc533;
+$secondary4: #62b58f;
+$btn-white: #fff;
+$neu-black: #000;
+$neu-grey-14: #f5f5f5;
+$neu-white: #fff;
+$neu-grey-2: #4b4b4b;
+
+body {
+    font-family: $font-main;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    max-height: 180px;
+}
+
+@mixin box-shadow {
+    box-shadow: (0px 8px 16px rgba(38, 38, 38, 0.24)),
+        (0px 16px 24px rgba(38, 38, 38, 0.2));
+}

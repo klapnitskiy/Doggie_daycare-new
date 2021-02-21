@@ -1,0 +1,216 @@
+.page {
+    &__title {
+        font-weight: 900;
+
+        &--xxl {
+            font-size: 56px;
+            line-height: 56px;
+        }
+
+        &--xl {
+            font-size: 42px;
+            line-height: 48px;
+        }
+
+        &--lg {
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        &--md {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        &--s {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        &--xs {
+            font-size: 19px;
+            line-height: 26px;
+        }
+
+        &--white {
+            color: $neu-white;
+        }
+
+        &--black {
+            color: $neu-black;
+        }
+
+        &--secondary {
+            color: $secondary2;
+        }
+
+        &--text-cap {
+            text-transform: capitalize;
+        }
+
+        &--text-center {
+            text-align: center;
+        }
+
+        &--hero {
+            max-width: 583px;
+            margin-bottom: 48px;
+        }
+    }
+
+    &__subtitle {
+        &--mark {
+            margin-bottom: 20px;
+            &::before {
+                content: "";
+                background: url(../../img/icons/OverlineMark.svg) no-repeat
+                    center;
+                height: 27px;
+                width: 28px;
+            }
+        }
+
+        &::before {
+            content: "";
+            height: 24px;
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        &--clock::before {
+            background: url(../../img/icons/access_time_24px.svg) no-repeat
+                center;
+        }
+
+        &--phone::before {
+            background: url(../../img/icons/phone_24px.svg) no-repeat center;
+        }
+
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        color: $btn-white;
+
+        &--margin-reset {
+            margin: 0;
+        }
+
+        &--bigger-spacing {
+            letter-spacing: 2.5px;
+        }
+
+        &--primary-clr {
+            color: $primary;
+        }
+    }
+
+    &--hero {
+        background: url(../img/hero-bg-blue.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__container {
+        max-width: 1020px;
+        width: 100%;
+        margin: 0 auto;
+
+        &--header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    &__button {
+        display: block;
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+        padding: 0.8em 3em;
+        background-color: $secondary2;
+        border: none;
+        border-radius: 0.5rem;
+        color: $btn-white;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &--shadow {
+            @include box-shadow;
+        }
+
+        &--margin {
+            margin-left: 30px;
+        }
+    }
+
+    &__text-body {
+        font-weight: normal;
+        letter-spacing: 0.15px;
+
+        &--md {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &--xs {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &--upper {
+            text-transform: uppercase;
+        }
+
+        &--lower {
+            text-transform: lowercase;
+        }
+    }
+
+    &__input {
+        border: 2px solid $neu-white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: $neu-white;
+        padding: 14px 24px;
+        width: 100%;
+    }
+}
+
+.page-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $neu-grey-2;
+    }
+
+    &__wrap {
+        margin-left: 23px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .page__container {
+        max-width: 90%;
+    }
+}
