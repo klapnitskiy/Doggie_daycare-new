@@ -1,6 +1,35 @@
 .page {
     padding: 75px 0 120px;
 
+    &--hero {
+        background: url(../img/hero-bg-blue.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &--about {
+        background-color: $neu-white;
+    }
+
+    &--video {
+        background-image: url(../img/video-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &--appointment {
+        background: url(../img/appointment-bg.jpg) no-repeat center;
+        background-size: cover;
+        padding: 130px 0 210px;
+    }
+
     &__title {
         font-weight: 900;
 
@@ -63,6 +92,12 @@
         &--margin-b40 {
             margin-bottom: 40px;
         }
+
+        &--appointment-digits {
+            font-weight: 900;
+            font-size: 96px;
+            line-height: 56px;
+        }
     }
 
     &__subtitle {
@@ -114,29 +149,6 @@
         }
     }
 
-    &--hero {
-        background: url(../img/hero-bg-blue.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    &--about {
-        background-color: $neu-white;
-    }
-
-    &--video {
-        background-image: url(../img/video-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
     &__container {
         max-width: 1020px;
         width: 100%;
@@ -160,8 +172,16 @@
             @include box-shadow;
         }
 
-        &--margin {
+        &--margin-l {
             margin-left: 30px;
+        }
+
+        &--margin-t {
+            margin-top: 30px;
+        }
+
+        &--align-r {
+            margin-left: auto;
         }
 
         &--center {
@@ -199,6 +219,10 @@
         color: $neu-white;
         padding: 14px 24px;
         width: 100%;
+
+        &::placeholder {
+            color: $neu-white;
+        }
     }
 }
 
@@ -224,6 +248,7 @@
             text-align: unset;
             flex-basis: calc(calc(830px - 100%) * 999);
             flex-grow: 1;
+            padding: 0;
         }
     }
 
