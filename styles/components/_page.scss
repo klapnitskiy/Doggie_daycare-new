@@ -59,8 +59,8 @@
             margin-bottom: 48px;
         }
 
-        &--about {
-            background-color: #fff;
+        &--margin-b40 {
+            margin-bottom: 40px;
         }
     }
 
@@ -126,6 +126,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+    }
+
+    &--about {
+        background-color: $neu-white;
+    }
+
+    &--video {
+        background-image: url(../img/video-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     &__container {

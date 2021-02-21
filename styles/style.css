@@ -85,8 +85,8 @@ textarea {
   margin-bottom: 48px;
 }
 
-.page__title--about {
-  background-color: #fff;
+.page__title--margin-b40 {
+  margin-bottom: 40px;
 }
 
 .page__subtitle {
@@ -162,6 +162,17 @@ textarea {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.page--about {
+  background-color: #fff;
+}
+
+.page--video {
+  background-image: url(../img/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .page__container {
@@ -397,13 +408,6 @@ textarea {
 }
 
 .video {
-  background-image: url(../img/video-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.video__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,10 +424,6 @@ textarea {
   padding: 112px 0 169px;
   max-width: 411px;
   width: 100%;
-}
-
-.video__title {
-  margin-bottom: 40px;
 }
 
 .services__title {
