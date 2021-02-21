@@ -1,4 +1,6 @@
 .page {
+    padding: 75px 0 120px;
+
     &__title {
         font-weight: 900;
 
@@ -44,17 +46,21 @@
             color: $secondary2;
         }
 
-        &--text-cap {
+        &--capitalize {
             text-transform: capitalize;
         }
 
-        &--text-center {
+        &--center {
             text-align: center;
         }
 
         &--hero {
             max-width: 583px;
             margin-bottom: 48px;
+        }
+
+        &--about {
+            background-color: #fff;
         }
     }
 
@@ -104,6 +110,10 @@
         &--primary-clr {
             color: $primary;
         }
+
+        &--upper {
+            text-transform: uppercase;
+        }
     }
 
     &--hero {
@@ -122,13 +132,6 @@
         max-width: 1020px;
         width: 100%;
         margin: 0 auto;
-
-        &--header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-        }
     }
 
     &__button {

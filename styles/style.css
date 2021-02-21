@@ -22,6 +22,10 @@ textarea {
   max-height: 180px;
 }
 
+.page {
+  padding: 75px 0 120px;
+}
+
 .page__title {
   font-weight: 900;
 }
@@ -68,17 +72,21 @@ textarea {
   color: #f2726f;
 }
 
-.page__title--text-cap {
+.page__title--capitalize {
   text-transform: capitalize;
 }
 
-.page__title--text-center {
+.page__title--center {
   text-align: center;
 }
 
 .page__title--hero {
   max-width: 583px;
   margin-bottom: 48px;
+}
+
+.page__title--about {
+  background-color: #fff;
 }
 
 .page__subtitle {
@@ -132,6 +140,10 @@ textarea {
   color: #5d62b5;
 }
 
+.page__subtitle--upper {
+  text-transform: uppercase;
+}
+
 .page--hero {
   background: url(../img/hero-bg-blue.jpg);
   background-size: cover;
@@ -156,13 +168,6 @@ textarea {
   max-width: 1020px;
   width: 100%;
   margin: 0 auto;
-}
-
-.page__container--header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .page__button {
@@ -256,6 +261,13 @@ textarea {
   }
 }
 
+.header--absoulte {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .header-info {
   padding: 30px 0;
   display: -webkit-box;
@@ -327,11 +339,6 @@ textarea {
 
 .hero {
   width: 100%;
-}
-
-.about {
-  background-color: #fff;
-  padding: 75px 0 120px;
 }
 
 .about-content {

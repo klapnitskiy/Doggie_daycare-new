@@ -1,7 +1,11 @@
-// .header {
-//     position: absolute;
-//     width: 100%;
-// }
+.header {
+    &--absoulte {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
 
 .header-info {
     padding: 30px 0;

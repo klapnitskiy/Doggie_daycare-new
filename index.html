@@ -15,8 +15,8 @@
     <body>
         <main class="main">
             <section class="page page--hero">
-                <div class="page__container page__container--header">
-                    <header class="header">
+                <header class="header header--absoulte">
+                    <div class="page__container">
                         <div class="header-info">
                             <div class="header-info__logo">
                                 <img src="./img/icons/logo.svg" alt="logo" />
@@ -25,7 +25,7 @@
                                 <div class="header-info__item">
                                     <div class="header-info__schedule">
                                         <span
-                                            class="header-info__schedule-item page__subtitle page__subtitle--clock page--text-upper"
+                                            class="header-info__schedule-item page__subtitle page__subtitle--clock page__subtitle--upper"
                                             >Boarding hours</span
                                         >
                                         <span
@@ -37,7 +37,7 @@
                                 <div class="header-info__item">
                                     <div class="header-info__schedule">
                                         <span
-                                            class="header-info__schedule-item page__subtitle page__subtitle--phone page--text-upper"
+                                            class="header-info__schedule-item page__subtitle page__subtitle--phone page__subtitle--upper"
                                             >Call us</span
                                         >
                                         <span
@@ -53,7 +53,6 @@
                                 </button>
                             </div>
                         </div>
-
                         <nav class="header-nav">
                             <ul class="header-nav__list">
                                 <li class="header-nav__item">
@@ -86,8 +85,8 @@
                                 </li>
                             </ul>
                         </nav>
-                    </header>
-                </div>
+                    </div>
+                </header>
 
                 <div class="page__container">
                     <h1
@@ -98,6 +97,111 @@
                     <button class="page__button page__button--shadow">
                         Make an appointment
                     </button>
+                </div>
+            </section>
+
+            <section class="page page--about">
+                <div class="page__container">
+                    <div class="about-content">
+                        <span
+                            class="page__subtitle page__subtitle--mark page__subtitle--bigger-spacing page__subtitle--upper"
+                            >Who we are</span
+                        >
+                        <h3 class="about-content__title">
+                            Nemo enim ipsam voluptatem quia voluptas in proident
+                        </h3>
+                        <p class="about-content__text">
+                            Ut enim ad minima veniam, quis nostrum
+                            exercitationem ullam corporis suscipit laboriosam,
+                            nisi ut aliquid ex ea commodi consequatur. Quis
+                            autem vel eum iure reprehenderit qui in ea voluptate
+                            velit esse quam nihil molestiae consequatur, vel
+                            illum qui dolorem eum fugiat quo voluptas nulla
+                            pariatur.
+                        </p>
+                        <img
+                            class="about-content__img shadow"
+                            src="./img/dog.jpg"
+                            alt="dog"
+                        />
+                    </div>
+                    <div class="about-promises">
+                        <span
+                            class="page__subtitle page__subtitle--mark page__subtitle--bigger-spacing page__subtitle--primary-clr page__subtitle--upper"
+                            >Our promise to you</span
+                        >
+                        <h3
+                            class="about-promises__title page__title page__title--lg page__title--black"
+                        >
+                            Sed perspiciatis omnis iste natus
+                        </h3>
+                        <div class="about-promises__list">
+                            <div class="about-promises__item page-feature">
+                                <img
+                                    src="./img/icons/dog_love_24x.svg"
+                                    alt="dog-love"
+                                    class="about-promises__item-img page-feature__img"
+                                />
+                                <div class="page-feature__wrap">
+                                    <h6
+                                        class="about-promises__item-title page-feature__title page__title page__title--xs page__title--secondary page__title--capitalize"
+                                    >
+                                        24/7 Love & care
+                                    </h6>
+                                    <p
+                                        class="about-promises__item-text page-feature__text"
+                                    >
+                                        At vero eos et accusamus et iusto odio
+                                        dignissimos ducimus qui blanditiis
+                                        praesentium corrupti quos dolores et
+                                        quas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-promises__item page-feature">
+                                <img
+                                    src="./img/icons/dog_vet_24x.svg"
+                                    alt="dog-vet"
+                                    class="about-promises__item-img page-feature__img"
+                                />
+                                <div class="page-feature__wrap">
+                                    <h6
+                                        class="about-promises__item-title page-feature__title page__title page__title--xs page__title--secondary page__title--capitalize"
+                                    >
+                                        On-site veterinarian
+                                    </h6>
+                                    <p
+                                        class="about-promises__item-text page-feature__text"
+                                    >
+                                        Dolorem ipsum quia dolor sit amet,
+                                        consectetur, adipisci velit, sed quia
+                                        non numquam eius modi tempora incidunt.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-promises__item page-feature">
+                                <img
+                                    src="./img/icons/dog_love_24x.svg"
+                                    alt="dog-love"
+                                    class="about-promises__item-img page-feature__img"
+                                />
+                                <div class="page-feature__wrap">
+                                    <h6
+                                        class="about-promises__item-title page-feature__title page__title page__title--xs page__title--secondary page__title--capitalize"
+                                    >
+                                        Live-stream Cameras
+                                    </h6>
+                                    <p
+                                        class="about-promises__item-text page-feature__text"
+                                    >
+                                        Quis autem vel eum iure reprehenderit
+                                        qui in ea voluptate velit esse quam
+                                        nihil molestiae consequatur illum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
