@@ -243,6 +243,10 @@
         text-transform: uppercase;
         cursor: pointer;
 
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+
         &--shadow {
             @include box-shadow;
         }
