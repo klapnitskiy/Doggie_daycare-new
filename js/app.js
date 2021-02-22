@@ -3,13 +3,16 @@ const menu = document.querySelector(".header-nav");
 
 menuBtn.addEventListener("click", showMenu);
 
-document.addEventListener("DOMContentLoaded", function () {
-    if (!menu.classList.contains("header-nav--mobile-active")) {
-        menu.classList.add("header-nav--mobile-closed");
-    } else {
-        menu.classList.remove("header-nav--mobile-closed");
-    }
-});
+if (window.screen.width < 768) {
+    // Resolution is 1024x768 or above
+    document.addEventListener("DOMContentLoaded", function () {
+        if (!menu.classList.contains("header-nav--mobile-active")) {
+            menu.classList.add("header-nav--mobile-closed");
+        } else {
+            menu.classList.remove("header-nav--mobile-closed");
+        }
+    });
+}
 
 function classListener() {
     // menu.classList.remove("header-nav--mobile-active");
