@@ -5,31 +5,36 @@
     // flex-wrap: wrap;
 
     &__title {
-        width: min-content;
+        max-width: 32.4rem;
+        width: 100%;
     }
 
     &__form {
-        max-width: 585px;
+        max-width: 58.5rem;
         width: 100%;
-        padding: 76px 57px;
+        padding: 7.6rem 5.7rem;
         @include box-shadow;
         background-color: $primary;
-        border-radius: 40px;
+        border-radius: 4rem;
+
+        @media (max-width: 564px) {
+            padding: 5rem 3.5rem;
+        }
     }
 
     &__form-inputs {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 2rem;
     }
 
     &__form-input {
-        flex: 1 1 220px;
+        flex: 1 1 22rem;
         color: $neu-white;
     }
 
     &__button {
-        margin-top: 30px;
+        margin-top: 3rem;
         margin-left: auto;
     }
 }

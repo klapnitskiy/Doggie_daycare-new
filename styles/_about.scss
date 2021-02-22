@@ -1,36 +1,40 @@
 .about-content {
     background-color: $primary;
     color: #fff;
-    padding: 45px 85px;
-    border-radius: 40px;
+    padding: 4.5rem 8.5rem;
+    border-radius: 4rem;
+
+    @media (max-width: 564px) {
+        padding: 4.5rem 3.5rem;
+    }
 
     &__title {
-        max-width: 583px;
-        margin-bottom: 36px;
+        max-width: 58.3rem;
+        margin-bottom: 3.6rem;
     }
 
     &__text {
-        margin-bottom: 36px;
+        margin-bottom: 3.6rem;
         color: $neu-grey-14;
     }
 
     &__img {
-        border-radius: 40px;
+        border-radius: 4rem;
         overflow: hidden;
         @include box-shadow;
     }
 }
 
 .about-promises {
-    margin-top: 110px;
+    margin-top: 11rem;
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 2.4rem;
     }
 
     &__title {
-        margin-bottom: 68px;
+        margin-bottom: 6.8rem;
     }
 }
